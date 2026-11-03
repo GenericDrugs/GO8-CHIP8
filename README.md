@@ -10,7 +10,7 @@ CHIP-8 is a small interpreted programming language originally used for simple ga
 
 - CHIP-8 instruction interpretation
 - ROM loading
-- Display and input handling
+- Display and input handling using [go-sdl2](https://github.com/veandco/go-sdl2)
 
 ## Getting started
 
