@@ -332,7 +332,14 @@ func (c *chip8) TableE() {
 }
 
 func (c *chip8) Table0() {
-	c.table0[c.opcode&0x000F]()
+	switch c.opcode & 0x00FF {
+	case 0xE0:
+		c.OP_00E0()
+	case 0xEE:
+		c.OP_00EE()
+	default:
+		c.OP_NULL() // or report an unsupported opcode
+	}
 }
 
 func (c *chip8) Table8() {
