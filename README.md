@@ -23,4 +23,6 @@ cd GO8-CHIP8
 ## Usage
 ```bash
 ~/chip8-emu <Scale> <Delay> <ROM>
+
+go run . <Scale> <Delay> <ROM>
 ```
