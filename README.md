@@ -19,3 +19,8 @@ Clone the repository:
 ```bash
 git clone https://github.com/GenericDrugs/GO8-CHIP8.git
 cd GO8-CHIP8
+```
+## Usage
+```bash
+~/chip8-emu <Scale> <Delay> <ROM>
+```
