@@ -16,6 +16,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Install SDL2 development libraries
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libsdl2-dev pkg-config
+    
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
